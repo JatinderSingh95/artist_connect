@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_weight="5"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0sp">
+
+   <ImageView
+       android:layout_weight="1"
+       android:src="@drawable/ct"
+       android:layout_width="match_parent"
+       android:layout_height="0sp" />
+
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="0sp"
+        android:hint="Search Name"
+        android:inputType="textVisiblePassword"/>
+    <ListView
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0sp">
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </GridView>
+    </LinearLayout>
+</LinearLayout>
